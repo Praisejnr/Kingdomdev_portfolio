@@ -1,0 +1,341 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  background-color: #121;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  background-color: #121;
+  padding: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+#logo span {
+  font-size: 2rem;
+  color: #191;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.5s ease-in;
+}
+
+.active {
+  color: #191;
+}
+
+nav a:hover {
+  color: #191;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger #bar {
+  display: block;
+  width: 24px;
+  background-color: #fff;
+  height: 3px;
+  margin: 6px;
+  transition: transform 0.5s;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  background-image: url('/img/background.jpg');
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-text h3 {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.head-text span {
+  font-size: 2.5rem;
+  color: #191;
+}
+
+.head-text a {
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.5s ease-in-out;
+}
+
+.head-text a:hover {
+  letter-spacing: 4px;
+  background-color: #191;
+  color: #fff;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#contact-container h3,
+#port-text h3,
+#about-text h3 {
+  font-size: 2rem;
+}
+
+#contact-container span,
+#port-text span,
+#about-text span {
+  font-size: 2rem;
+  color: #191;
+}
+
+#about-text p {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  word-spacing: 1px;
+}
+
+#about-img img {
+  max-width: 320px;
+}
+
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#port-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#port-text {
+  text-align: center;
+}
+
+#port-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: 1px solid #fff;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.5s;
+}
+
+#card:hover{
+  transform: translateY(-0.625rem);
+}
+
+#imgbx {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+
+#imgbx img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#img-text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: left;
+}
+
+#img-text h3 {
+  font-size: 1.5rem;
+  color: #191;
+}
+
+#img-text p{
+  margin-top: 3px;
+  font-size: 1rem;
+}
+
+#img-text a{
+  margin-top: 3px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+#contact-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact-text{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+#contact-text div h3{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#contact-text div p{
+  margin-top: 10px;
+  font-size: 1.5rem;
+  color: #191;
+}
+
+#contact-text div{
+  margin: 20px;
+}
+
+#contact-img{
+  display: flex;
+  flex-direction: row;
+}
+
+#contact-img img{
+  width: 35px;
+}
+
+
+
+@media (max-width: 750px) {
+  * {
+    font-size: 0.5rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .navBar {
+    display: none;
+  }
+
+  .navBar a {
+    font-size: 0.8rem;
+    padding: 20px;
+    background-color: #fff;
+    color: #111;
+    width: 100%;
+    transition: 0.5s ease;
+  }
+
+  .navBar a:hover {
+    background-color: #121;
+  }
+
+  .navBar.active {
+    display: flex;
+    flex-direction: column;
+    top: 70px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+  }
+
+  .active #bar:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .active #bar:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  #about-container {
+    flex-direction: column;
+  }
+
+  #port-cards {
+    flex-direction: column;
+  }
+  
+  #contact-text{
+    flex-direction: column;
+  }
+}
