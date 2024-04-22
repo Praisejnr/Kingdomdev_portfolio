@@ -8,11 +8,11 @@ function toggleBtn() {
 
 
 const images = [
-  'img/background.jpg',
-  'img/background1.jpg',
-  'img/background2.jpg',
-  'img/background3.jpg',
-  'img/background4.jpg',
+  'https://praisejnr.github.io/Kingdomdev_portfolio/img/background.jpg',
+  'https://praisejnr.github.io/Kingdomdev_portfolio/img/background1.jpg',
+  'https://praisejnr.github.io/Kingdomdev_portfolio/img/background2.jpg',
+  'https://praisejnr.github.io/Kingdomdev_portfolio/img/background3.jpg',
+  'https://praisejnr.github.io/Kingdomdev_portfolio/img/background4.jpg',
   ];
 
 function changeBackground() {
